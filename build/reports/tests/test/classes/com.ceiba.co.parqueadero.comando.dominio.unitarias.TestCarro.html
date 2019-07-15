@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.ceiba.co.parqueadero.comando.dominio.unitarias.TestCarro</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.ceiba.co.parqueadero.comando.dominio.unitarias.TestCarro</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ceiba.co.parqueadero.comando.dominio.unitarias.html">com.ceiba.co.parqueadero.comando.dominio.unitarias</a> &gt; TestCarro</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.018s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">calcularPrecioCuandoCumpleNueveHoras</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">calcularPrecioPorHoras</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">calcularPrecioPorUnDia</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">calcularPrecioPorUnDiaYHorasAdicionalesMayoresAlLimite</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">calcularPrecioPorUnDiaYHorasAdicionalesMenoresAlLimite</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2019-07-15 17:14:18.241  INFO 4884 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ceiba.co.parqueadero.comando.dominio.unitarias.TestCarro], using SpringBootContextLoader
+2019-07-15 17:14:18.242  INFO 4884 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.ceiba.co.parqueadero.comando.dominio.unitarias.TestCarro]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-07-15 17:14:18.243  INFO 4884 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.ceiba.co.parqueadero.comando.dominio.unitarias.TestCarro]: TestCarro does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-07-15 17:14:18.259  INFO 4884 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.ceiba.co.parqueadero.ParqueaderoApplication for test class com.ceiba.co.parqueadero.comando.dominio.unitarias.TestCarro
+2019-07-15 17:14:18.262  INFO 4884 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-15 17:14:18.263  INFO 4884 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fc94a16, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17ee1731, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25ff7ad5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@73d408eb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@76c8657d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1178b30a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4f0f4a22, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1c4f8078, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2919fd01, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7d2dfbcb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4846e016, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28eaf526]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-07-15 17:14:18.338  INFO 4884 --- [    Test worker] c.c.c.p.c.dominio.unitarias.TestCarro    : Starting TestCarro on PEDRO-RUIZ with PID 4884 (started by pedro.ruiz in C:\Users\pedro.ruiz\Downloads\parqueadero)
+2019-07-15 17:14:18.339  INFO 4884 --- [    Test worker] c.c.c.p.c.dominio.unitarias.TestCarro    : No active profile set, falling back to default profiles: default
+2019-07-15 17:14:18.711  INFO 4884 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-15 17:14:18.771  INFO 4884 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 1 repository interfaces.
+2019-07-15 17:14:18.900  INFO 4884 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$904b189b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-15 17:14:19.022  INFO 4884 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-07-15 17:14:19.027  INFO 4884 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-07-15 17:14:19.072  INFO 4884 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-15 17:14:19.090  INFO 4884 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-15 17:14:19.164  INFO 4884 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@25f47c8'
+2019-07-15 17:14:19.165  INFO 4884 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-15 17:14:19.278  INFO 4884 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-15 17:14:19.803  INFO 4884 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-15 17:14:19.821  WARN 4884 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-15 17:14:20.283  INFO 4884 --- [    Test worker] c.c.c.p.c.dominio.unitarias.TestCarro    : Started TestCarro in 2.006 seconds (JVM running for 17.699)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at Jul 15, 2019 5:14:24 PM</p>
+</div>
+</div>
+</body>
+</html>

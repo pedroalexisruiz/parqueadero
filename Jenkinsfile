@@ -20,7 +20,7 @@ pipeline{
 		}
 		
 		environment {
-        PROJECT_PATH_BACK = 'parqueadero'
+        PROJECT_PATH_BACK = 'Estacionamiento'
 		}
 		
 		parameters{
