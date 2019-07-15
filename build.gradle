@@ -9,7 +9,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
 apply plugin: "org.sonarqube"
 
-group = 'com.co.ceiba'
+group = 'com.ceiba.co'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
