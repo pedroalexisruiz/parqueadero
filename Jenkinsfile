@@ -36,7 +36,19 @@ pipeline{
 				}
 			}
 		
-		
+			stage('Clean'){
+				parallel {
+					stage('Clean project'){
+						steps{
+							echo "------------>Limpieza de backend<------------"
+							dir("${PROJECT_PATH_BACK}"){
+								sh 'gradle --b ./build.gradle clean -x test'
+							}
+						}
+					
+					}
+				}
+			}
 			stage('Compile'){
 				parallel {
 					stage('Compile backend'){
@@ -57,7 +69,6 @@ pipeline{
 							echo '------------>test backend<------------'
 							dir("${PROJECT_PATH_BACK}"){
 								sh 'gradle --b ./build.gradle test --debug'
-								
 							}
 						}
 					}
