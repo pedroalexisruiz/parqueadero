@@ -28,9 +28,9 @@ public abstract class Ticket {
 	public static final String MOTO = "MOTO";
 	public static final String CARRO = "CARRO";
 
-	private static final String PLACA_VACIA = "Debes ingresar la placa";
-	private static final String TIPO_VEHICULO_VACIO = "Debes elegir el tipo de vehiculo";
-	private static final String TIPO_VEHICULO_INVALIDO = "Debes elegir un tipo de vehiculo valido";
+	public static final String PLACA_VACIA = "Debes ingresar la placa";
+	public static final String TIPO_VEHICULO_VACIO = "Debes elegir el tipo de vehiculo";
+	public static final String TIPO_VEHICULO_INVALIDO = "Debes elegir un tipo de vehiculo valido";
 
 	public Ticket(String placa, String tipoDeVehiculo) {
 		ValidadorRequeridos.validarStringNoNuloOVacio(placa, PLACA_VACIA);
