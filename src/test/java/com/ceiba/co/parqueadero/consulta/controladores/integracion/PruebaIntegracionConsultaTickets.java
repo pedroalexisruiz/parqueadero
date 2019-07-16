@@ -68,8 +68,8 @@ public class PruebaIntegracionConsultaTickets {
 	public void probarListadoParqueadero() {
 		// arrange
 		ResultActions resultados;
-		int cantidadVehiculosParqueados = 20;
-		Ticket ticket = new TicketBuilder().conPlaca("YBC123").conTipoDeVehiculo("CARRO").conTotalAPagar(0L).build();
+		int cantidadVehiculosParqueados = 30;
+		Ticket ticket = new TicketBuilder().conPlaca("YBC124").conCilindraje(150).conTipoDeVehiculo("MOTO").conTotalAPagar(0L).build();
 
 		try {
 			// act
@@ -79,8 +79,8 @@ public class PruebaIntegracionConsultaTickets {
 
 			// assert
 			resultados.andExpect(jsonPath("$", hasSize(cantidadVehiculosParqueados)));
-			resultados.andExpect(jsonPath("$[19].placa", is(ticket.getPlaca())))
-					.andExpect(jsonPath("$[19].tipoDeVehiculo", is(ticket.getTipoDeVehiculo())));
+			resultados.andExpect(jsonPath("$[29].placa", is(ticket.getPlaca())))
+					.andExpect(jsonPath("$[29].tipoDeVehiculo", is(ticket.getTipoDeVehiculo())));
 		} catch (Exception e) {
 			fail();
 		}

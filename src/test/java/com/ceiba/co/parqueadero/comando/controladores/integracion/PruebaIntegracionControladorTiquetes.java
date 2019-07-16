@@ -190,6 +190,25 @@ public class PruebaIntegracionControladorTiquetes {
 			assertEquals(Vigilante.NO_HAY_ESPACIOS_DISPONIBLES, e.getCause().getMessage());
 		}
 	}
+	
+	@Test
+	@Sql("/insertarCarros.sql")
+	public void ingresarMotoSinCupo() {
+		// arrange
+		ticketComando = new TicketCommandBuilder().conPlaca(PLACA).conCilindraje(250).conTipoDeVehiculo(Ticket.MOTO).build();
+		json = asJsonString(ticketComando);
+
+		try {
+			// act
+			mvc.perform(
+					post(URL).content(json).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
+					.andExpect(status().isOk());
+			fail();
+		} catch (Exception e) {
+			// assert
+			assertEquals(Vigilante.NO_HAY_ESPACIOS_DISPONIBLES, e.getCause().getMessage());
+		}
+	}
 
 	public static String asJsonString(final Object obj) {
 		try {

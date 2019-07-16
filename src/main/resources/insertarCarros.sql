@@ -18,4 +18,16 @@ insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehic
 insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (null,  sysdate, null, 'WBC123', 'CARRO', hibernate_sequence.nextval, 0);
 insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (null,  sysdate, null, 'XBC123', 'CARRO', hibernate_sequence.nextval, 0);
 insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (null,  sysdate, null, 'YBC123', 'CARRO', hibernate_sequence.nextval, 0);
+
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'OBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'PBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'QBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'RBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'DBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'TBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'UBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'WBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'XBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, null, 'YBC124', 'MOTO', hibernate_sequence.nextval, 0);
+insert into ticket (cilindraje,  horaDeEntrada, horaDeSalida, placa, tipoDeVehiculo, id, totalAPagar) values (150,  sysdate, sysdate, 'ZBC123', 'CARRO', hibernate_sequence.nextval, 0);
 commit;
