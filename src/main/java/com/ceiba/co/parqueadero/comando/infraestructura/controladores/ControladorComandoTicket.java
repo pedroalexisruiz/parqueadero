@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ceiba.co.parqueadero.comando.aplicacion.entidad.ComandoTicket;
+import com.ceiba.co.parqueadero.comando.aplicacion.entidad.InformacionDeSalida;
 import com.ceiba.co.parqueadero.comando.aplicacion.manejadores.ManejadorRegistrarEntrada;
 import com.ceiba.co.parqueadero.comando.aplicacion.manejadores.ManejadorRegistrarSalida;
 import com.ceiba.co.parqueadero.comando.aplicacion.manejadores.RespuestaComando;
@@ -37,7 +38,7 @@ public class ControladorComandoTicket {
 	}
 
 	@PutMapping("/{placa}")
-	public RespuestaComando<LocalDateTime> registrarSalida(@PathVariable String placa) {
+	public RespuestaComando<InformacionDeSalida> registrarSalida(@PathVariable String placa) {
 		return manejadorDeRegistroDeSalida.ejecutar(placa);
 	}
 }
