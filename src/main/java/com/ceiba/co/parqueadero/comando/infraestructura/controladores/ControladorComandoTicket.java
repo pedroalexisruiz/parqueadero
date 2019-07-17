@@ -3,7 +3,6 @@ package com.ceiba.co.parqueadero.comando.infraestructura.controladores;
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -19,7 +18,6 @@ import com.ceiba.co.parqueadero.comando.aplicacion.manejadores.RespuestaComando;
 
 @RestController
 @RequestMapping("/tickets")
-@CrossOrigin(origins = "http://localhost:4200")
 public class ControladorComandoTicket {
 
 	private final ManejadorRegistrarEntrada manejadorDeRegistroDeEntrada;
