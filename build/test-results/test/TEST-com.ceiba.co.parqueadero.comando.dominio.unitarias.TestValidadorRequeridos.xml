@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ceiba.co.parqueadero.comando.dominio.unitarias.TestValidadorRequeridos" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-07-17T12:59:46" hostname="PEDRO-RUIZ" time="0.018">
+  <properties/>
+  <testcase name="validarTipoDeVehiculoNoValido" classname="com.ceiba.co.parqueadero.comando.dominio.unitarias.TestValidadorRequeridos" time="0.001"/>
+  <testcase name="validarStringNulo" classname="com.ceiba.co.parqueadero.comando.dominio.unitarias.TestValidadorRequeridos" time="0.0"/>
+  <testcase name="validarTipoDeVehiculoNulo" classname="com.ceiba.co.parqueadero.comando.dominio.unitarias.TestValidadorRequeridos" time="0.001"/>
+  <testcase name="validarStringVacio" classname="com.ceiba.co.parqueadero.comando.dominio.unitarias.TestValidadorRequeridos" time="0.004"/>
+  <testcase name="validarObjetoNulo" classname="com.ceiba.co.parqueadero.comando.dominio.unitarias.TestValidadorRequeridos" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
