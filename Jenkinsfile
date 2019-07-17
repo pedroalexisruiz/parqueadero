@@ -47,6 +47,14 @@ pipeline{
 						}
 					
 					}
+					stage('Clean project tests'){
+						steps{
+							echo "------------>Limpieza de tests<------------"
+							dir("${PROJECT_PATH_BACK}"){
+								sh 'gradle --b ./build.gradle cleanTest -x test'
+							}
+						}
+					}
 				}
 			}
 			stage('Compile'){
