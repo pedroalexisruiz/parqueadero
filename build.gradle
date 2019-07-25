@@ -25,9 +25,13 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven {
+        url 'http://dynamodb-local.s3-website-us-west-2.amazonaws.com/release'
+    }
 }
 
 dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
@@ -36,4 +40,19 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testCompile group: 'com.amazonaws', name: 'DynamoDBLocal', version: '1.11.0'
+}
+
+task copyNativeDeps(type: Copy) {
+    from (configurations.testCompile) {
+        include "*.dylib"
+        include "*.so"
+        include "*.dll"
+    }
+    into 'build/libs'
+}
+
+test.dependsOn copyNativeDeps
+test.doFirst {
+    systemProperty "java.library.path", 'build/libs'
 }

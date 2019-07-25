@@ -10,9 +10,9 @@ public class TicketBuilder {
 	private static final Integer CILINDRAJE_BASE = 250;
 	private LocalDateTime HORA_DE_ENTRADA_BASE = LocalDateTime.of(2019, 07, 01, 0, 0);
 	private static final String TIPO_DE_VEHICULO = "MOTO";
-	private static final Long ID_BASE = 0L;
+	private static final String ID_BASE = "";
 	
-	private Long id;
+	private String id;
 	private String placa;
 	private LocalDateTime horaDeEntrada;
 	private LocalDateTime horaDeSalida;
@@ -29,7 +29,7 @@ public class TicketBuilder {
 		this.tipoDeVehiculo = TIPO_DE_VEHICULO;
 	}
 
-	public TicketBuilder conId(long id) {
+	public TicketBuilder conId(String id) {
 		this.id = id;
 		return this;
 	}

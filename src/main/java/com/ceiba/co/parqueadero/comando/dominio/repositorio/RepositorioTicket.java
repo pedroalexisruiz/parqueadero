@@ -29,8 +29,6 @@ public interface RepositorioTicket {
 	 */
 	boolean existeVehiculoEnParqueadero(String plate);
 
-	Ticket buscarPorId(Long id);
-
 	Ticket buscarPorPlacaSinSalida(String plate);
 
 	Long contarVehiculosParqueadosPorTipo(String tipoDeVehiculo);

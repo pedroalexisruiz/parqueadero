@@ -46,7 +46,7 @@ public class TicketMoto extends Ticket {
 		this.cilindraje = cilindraje;
 	}
 
-	public TicketMoto(Long id, String placa, LocalDateTime horaDeEntrada, LocalDateTime horaDeSalida,
+	public TicketMoto(String id, String placa, LocalDateTime horaDeEntrada, LocalDateTime horaDeSalida,
 			String tipoDeVehiculo, Long totalAPagar, Integer cilindraje) {
 		super(id, placa, horaDeEntrada, horaDeSalida, tipoDeVehiculo, totalAPagar);
 		ValidadorRequeridos.validarObjetoNoNulo(cilindraje, CILINDRAJE_MOTO_VACIO);

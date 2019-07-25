@@ -2,9 +2,12 @@ package com.ceiba.co.parqueadero.consulta.dominio.dto;
 
 import java.time.LocalDateTime;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document("tickets")
 public class Ticket {
 
-	private Long id;
+	private String id;
 	private String placa;
 	private LocalDateTime horaDeEntrada;
 	private LocalDateTime horaDeSalida;
@@ -15,7 +18,7 @@ public class Ticket {
 	public Ticket() {
 	}
 
-	public Ticket(Long id, String placa, LocalDateTime horaDeEntrada, LocalDateTime horaDeSalida, String tipoDeVehiculo,
+	public Ticket(String id, String placa, LocalDateTime horaDeEntrada, LocalDateTime horaDeSalida, String tipoDeVehiculo,
 			long totalAPagar, Integer cilindraje) {
 		this.id = id;
 		this.placa = placa;
@@ -26,7 +29,7 @@ public class Ticket {
 		this.cilindraje = cilindraje;
 	}
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
@@ -54,7 +57,7 @@ public class Ticket {
 		return cilindraje;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

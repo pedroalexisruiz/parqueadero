@@ -14,7 +14,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public abstract class Ticket {
 
-	private Long id;
+	private String id;
 	private String placa;
 	private LocalDateTime horaDeEntrada;
 	private LocalDateTime horaDeSalida;

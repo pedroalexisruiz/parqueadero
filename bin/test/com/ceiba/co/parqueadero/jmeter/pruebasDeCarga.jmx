@@ -28,7 +28,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="tickets csv" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">D:/estacionamiento/src/test/java/ceiba/com/co/parqueadero/jmeter/datosRegistro.csv</stringProp>
+          <stringProp name="filename">C:/Users/pedro.ruiz/Downloads/parqueadero/src/test/java/com/ceiba/co/parqueadero/jmeter/datosRegistro.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -52,7 +52,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/tickets</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -183,7 +183,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
           <stringProp name="HTTPSampler.path">/tickets/${placa}</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>

@@ -15,7 +15,7 @@ public class TicketMapper implements RowMapper<Ticket> {
 		LocalDateTime horaDeSalida = rs.getTimestamp("horaDeSalida") != null
 				? rs.getTimestamp("horaDeSalida").toLocalDateTime()
 				: null;
-		return new Ticket(rs.getLong("id"), rs.getString("placa"), rs.getTimestamp("horaDeEntrada").toLocalDateTime(),
+		return new Ticket(rs.getString("id"), rs.getString("placa"), rs.getTimestamp("horaDeEntrada").toLocalDateTime(),
 				horaDeSalida, rs.getString("tipoDeVehiculo"), rs.getLong("totalAPagar"), rs.getInt("cilindraje"));
 	}
 

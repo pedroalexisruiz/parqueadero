@@ -16,7 +16,7 @@ public class TicketCarro extends Ticket {
 		super(placa, tipoDeVehiculo);
 	}
 
-	public TicketCarro(Long id, String placa, LocalDateTime horaDeEntrada, LocalDateTime horaDeSalida,
+	public TicketCarro(String id, String placa, LocalDateTime horaDeEntrada, LocalDateTime horaDeSalida,
 			String tipoDeVehiculo, long totalAPagar) {
 		super(id, placa, horaDeEntrada, horaDeSalida, tipoDeVehiculo, totalAPagar);
 	}

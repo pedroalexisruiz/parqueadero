@@ -1,14 +1,12 @@
 package com.ceiba.co.parqueadero.comando.infraestructura.persistencia.repositorios;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.ceiba.co.parqueadero.comando.dominio.entidad.Ticket;
 import com.ceiba.co.parqueadero.comando.dominio.repositorio.RepositorioTicket;
 import com.ceiba.co.parqueadero.comando.infraestructura.persistencia.builder.TicketBuilder;
-import com.ceiba.co.parqueadero.comando.infraestructura.persistencia.entidad.EntidadTicket;
 import com.ceiba.co.parqueadero.comando.infraestructura.persistencia.repositorios.implejpa.RepositorioTicketJpa;
 
 public class RepositorioTicketH2 implements RepositorioTicket {
@@ -31,12 +29,6 @@ public class RepositorioTicketH2 implements RepositorioTicket {
 	@Override
 	public boolean existeVehiculoEnParqueadero(String placa) {
 		return repositorioTicket.existeVehiculoEnParqueadero(placa) == "true";
-	}
-
-	@Override
-	public Ticket buscarPorId(Long id) {
-		Optional<EntidadTicket> ticket = repositorioTicket.findById(id);
-		return ticketBuilder.convertirADominio(ticket.orElse(null));
 	}
 
 	@Override
